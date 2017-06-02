@@ -1,7 +1,7 @@
 <!--The whole content below can be removed with the new code.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!!
+    {{title}}
   </h1>
 
   <md-card class="short-card left-align">
@@ -11,6 +11,23 @@
     <md-card-content>Simple Card</md-card-content>
   </md-card>
 
+  <md-datepicker startView="year" [startAt]="startDate"></md-datepicker>
+
+  <md-tab-group class="short-tab-group">
+    <md-tab label="One">
+     <div class="tab-content-container">
+       <h1>Some tab content</h1>
+       <md-card class="tiny-card left-align">
+         <md-card-title>Card Title</md-card-title>
+         <md-card-content>Simple Card</md-card-content>
+       </md-card>
+     </div>
+    </md-tab>
+    <md-tab label="Two">
+      <h1>Some more tab content</h1>
+      <p>Content</p>
+    </md-tab>
+  </md-tab-group>
 </div>
 
 

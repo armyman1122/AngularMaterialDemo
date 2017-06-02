@@ -3,14 +3,35 @@
   width: 400px;
 }
 
+.tiny-card {
+  width: 200px;
+}
+
 .left-align {
   text-align: left;
+}
+
+.short-tab-group {
+  width: 600px;
+}
+
+.tab-content-container {
+  margin-bottom: 2px;
 }
 
 md-card-title {
   margin-bottom: 4px;
 }
 
+md-card-subtitle {
+  color: #1CB5E0;
+}
+
 md-card-header {
 
+}
+
+
+md-tab {
+  margin-bottom: 2px;
 }
