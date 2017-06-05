@@ -11,7 +11,9 @@
     <md-card-content>Simple Card</md-card-content>
   </md-card>
 
-  <md-datepicker startView="year" [startAt]="startDate"></md-datepicker>
+  <input [mdDatepicker]="myDatepicker">
+  <button [mdDatepickerToggle]="myDatepicker"></button>
+  <md-datepicker startView="year" [startAt]="startDate" #myDatepicker></md-datepicker>
 
   <md-tab-group class="short-tab-group">
     <md-tab label="One">
