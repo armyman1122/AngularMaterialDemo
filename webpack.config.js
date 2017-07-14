@@ -74,13 +74,13 @@ module.exports = {
   },
   "entry": {
     "main": [
-      "./src\\main.ts"
+      "./src/main.ts"
     ],
     "polyfills": [
-      "./src\\polyfills.ts"
+      "./src/polyfills.ts"
     ],
     "styles": [
-      "./src\\styles.css"
+      "./src/styles.css"
     ]
   },
   "output": {
@@ -354,14 +354,14 @@ module.exports = {
         "favicon.ico"
       ],
       "globOptions": {
-        "cwd": "C:\\Users\\armyman1122\\Projects\\Angular\\MaterialDemo\\src",
+        "cwd": "/Users/Shared/workspaces/AngularMaterialDemo/src",
         "dot": true,
         "ignore": "**/.gitkeep"
       }
     }),
     new ProgressPlugin(),
     new HtmlWebpackPlugin({
-      "template": "./src\\index.html",
+      "template": "./src/index.html",
       "filename": "./index.html",
       "hash": false,
       "inject": true,
