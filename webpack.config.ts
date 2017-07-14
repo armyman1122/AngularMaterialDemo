@@ -75,6 +75,9 @@ module.exports = {
     'polyfills': [
       './src/polyfills.ts'
     ],
+    'vendor': [
+      './src/vendor.ts'
+    ],
     'styles': [
       './src/styles.css'
     ]

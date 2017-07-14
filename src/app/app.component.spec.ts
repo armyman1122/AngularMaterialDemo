@@ -3,7 +3,8 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdCardModule, MdDatepickerModule, MdNativeDateModule, MdTabsModule} from '@angular/material';
+import {MdCardModule, MdDatepickerIntl, MdDatepickerModule, MdNativeDateModule, MdTabsModule} from '@angular/material';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -18,7 +19,9 @@ describe('AppComponent', () => {
         MdDatepickerModule,
         MdNativeDateModule,
         MdTabsModule
-      ]
+      ],
+      providers: [MdDatepickerIntl],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 
